@@ -54,7 +54,15 @@ public class LocationsAdapter extends ArrayAdapter<Locations> {
         // Find the ImageView in the list_item.xml layout with the ID image.
         ImageView imageView = (ImageView) listItemView.findViewById(R.id.image);
 
-        imageView.setImageResource(currentLocation.getImageResourceId());
+        if (currentLocation.hasImage()) {
+            // If an image is available, display the provided image based on the resource ID
+            imageView.setImageResource(currentLocation.getImageResourceId());
+            // Make sure the view is visible
+            imageView.setVisibility(View.VISIBLE);
+        } else {
+            // Otherwise hide the ImageView (set visibility to GONE)
+            imageView.setVisibility(View.GONE);
+        }
 
         // Return the whole list item layout (containing 2 TextViews) so that it can be shown in
         // the ListView.

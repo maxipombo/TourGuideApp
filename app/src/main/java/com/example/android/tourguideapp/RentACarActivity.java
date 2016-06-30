@@ -9,7 +9,7 @@ import java.util.ArrayList;
 /**
  * Created by mpombos on 30/6/16.
  */
-public class MonumentsActivity extends AppCompatActivity {
+public class RentACarActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,12 +18,11 @@ public class MonumentsActivity extends AppCompatActivity {
 
         // Create a list of locations
         final ArrayList<Locations> locations = new ArrayList<>();
-        locations.add(new Locations("Obelisco", R.string.obelisco_description,
-                R.drawable.obelisco));
-        locations.add(new Locations("Palacio Legislativo", R.string.legislativo_description,
-                R.drawable.legislativo));
-        locations.add(new Locations("Palacio Salvo", R.string.salvo_description,
-                R.drawable.salvo));
+        locations.add(new Locations("Montevideo", R.string.montevideo_description));
+        locations.add(new Locations("Salto", R.string.salto_description));
+        locations.add(new Locations("Rivera", R.string.rivera_description));
+        locations.add(new Locations("Mercedes", R.string.mercedes_description));
+        locations.add(new Locations("Colonia", R.string.colonia_description));
 
         //Create AdapterView adapter with this activity as the context, and the arrayList of Locations
         LocationsAdapter adapter = new LocationsAdapter(this, locations);

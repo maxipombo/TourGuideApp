@@ -11,8 +11,11 @@ public class Locations {
     //Description of Location
     private int mDescription;
 
-    // Image resource ID for the word
-    private int mImageResourceId;
+    /** Image resource ID for the location */
+    private int mImageResourceId = NO_IMAGE_PROVIDED;
+
+    /** Constant value that represents no image was provided for this word */
+    private static final int NO_IMAGE_PROVIDED = -1;
 
     /**
      * Create a new Location object.
@@ -25,6 +28,11 @@ public class Locations {
         mName = name;
         mDescription = description;
         mImageResourceId = imageResourceId;
+    }
+
+    public Locations(String name, int description) {
+        mName = name;
+        mDescription = description;
     }
 
     /**
@@ -43,6 +51,13 @@ public class Locations {
      * Get the resource image ID
      */
     public int getImageResourceId() { return mImageResourceId; }
+
+    /**
+     * Returns whether or not there is an image for this word.
+     */
+    public boolean hasImage() {
+        return mImageResourceId != NO_IMAGE_PROVIDED;
+    }
 
 }
 

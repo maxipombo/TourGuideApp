@@ -1,7 +1,6 @@
 package com.example.android.tourguideapp;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -9,7 +8,7 @@ import java.util.ArrayList;
 /**
  * Created by mpombos on 30/6/16.
  */
-public class MonumentsActivity extends AppCompatActivity {
+public class FamousPeopleActivity extends MainActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,12 +17,16 @@ public class MonumentsActivity extends AppCompatActivity {
 
         // Create a list of locations
         final ArrayList<Locations> locations = new ArrayList<>();
-        locations.add(new Locations("Obelisco", R.string.obelisco_description,
-                R.drawable.obelisco));
-        locations.add(new Locations("Palacio Legislativo", R.string.legislativo_description,
-                R.drawable.legislativo));
-        locations.add(new Locations("Palacio Salvo", R.string.salvo_description,
-                R.drawable.salvo));
+        locations.add(new Locations("Montevideo", R.string.montevideo_description,
+                R.drawable.montevideo));
+        locations.add(new Locations("Salto", R.string.salto_description,
+                R.drawable.salto));
+        locations.add(new Locations("Rivera", R.string.rivera_description,
+                R.drawable.rivera));
+        locations.add(new Locations("Mercedes", R.string.mercedes_description,
+                R.drawable.mercedes));
+        locations.add(new Locations("Colonia", R.string.colonia_description,
+                R.drawable.colonia));
 
         //Create AdapterView adapter with this activity as the context, and the arrayList of Locations
         LocationsAdapter adapter = new LocationsAdapter(this, locations);

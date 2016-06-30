@@ -46,5 +46,37 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        // Find the View that shows the food category
+        TextView famousPeople = (TextView) findViewById(R.id.famous_people);
+
+        // Set a click listener on that View
+        famousPeople.setOnClickListener(new View.OnClickListener() {
+            // The code in this method will be executed when the food category is clicked on.
+            @Override
+            public void onClick(View view) {
+                // Create a new intent to open the {@link Monuments}
+                Intent famousPeopleIntent = new Intent(MainActivity.this, FamousPeopleActivity.class);
+
+                // Start the new activity
+                startActivity(famousPeopleIntent);
+            }
+        });
+
+        // Find the View that shows the food category
+        TextView rentACar = (TextView) findViewById(R.id.rent_a_car);
+
+        // Set a click listener on that View
+        rentACar.setOnClickListener(new View.OnClickListener() {
+            // The code in this method will be executed when the food category is clicked on.
+            @Override
+            public void onClick(View view) {
+                // Create a new intent to open the {@link Monuments}
+                Intent rentACarIntent = new Intent(MainActivity.this, RentACarActivity.class);
+
+                // Start the new activity
+                startActivity(rentACarIntent);
+            }
+        });
+
     }
 }
