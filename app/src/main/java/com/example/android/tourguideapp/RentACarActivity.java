@@ -18,11 +18,8 @@ public class RentACarActivity extends AppCompatActivity {
 
         // Create a list of locations
         final ArrayList<Locations> locations = new ArrayList<>();
-        locations.add(new Locations("Montevideo", R.string.montevideo_description));
-        locations.add(new Locations("Salto", R.string.salto_description));
-        locations.add(new Locations("Rivera", R.string.rivera_description));
-        locations.add(new Locations("Mercedes", R.string.mercedes_description));
-        locations.add(new Locations("Colonia", R.string.colonia_description));
+        locations.add(new Locations("Avis", R.string.avis_description));
+        locations.add(new Locations("Alamo", R.string.alamo_description));
 
         //Create AdapterView adapter with this activity as the context, and the arrayList of Locations
         LocationsAdapter adapter = new LocationsAdapter(this, locations);

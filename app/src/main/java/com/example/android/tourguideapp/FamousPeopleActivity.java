@@ -17,16 +17,10 @@ public class FamousPeopleActivity extends MainActivity {
 
         // Create a list of locations
         final ArrayList<Locations> locations = new ArrayList<>();
-        locations.add(new Locations("Montevideo", R.string.montevideo_description,
-                R.drawable.montevideo));
-        locations.add(new Locations("Salto", R.string.salto_description,
-                R.drawable.salto));
-        locations.add(new Locations("Rivera", R.string.rivera_description,
-                R.drawable.rivera));
-        locations.add(new Locations("Mercedes", R.string.mercedes_description,
-                R.drawable.mercedes));
-        locations.add(new Locations("Colonia", R.string.colonia_description,
-                R.drawable.colonia));
+        locations.add(new Locations("Diego Forlan", R.string.forlan_description,
+                R.drawable.forlan));
+        locations.add(new Locations("Mario Benedetti", R.string.benedetti_description,
+                R.drawable.benedetti));
 
         //Create AdapterView adapter with this activity as the context, and the arrayList of Locations
         LocationsAdapter adapter = new LocationsAdapter(this, locations);
