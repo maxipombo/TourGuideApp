@@ -30,5 +30,21 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        // Find the View that shows the food category
+        TextView monuments = (TextView) findViewById(R.id.monuments);
+
+        // Set a click listener on that View
+        monuments.setOnClickListener(new View.OnClickListener() {
+            // The code in this method will be executed when the food category is clicked on.
+            @Override
+            public void onClick(View view) {
+                // Create a new intent to open the {@link Monuments}
+                Intent monumentsIntent = new Intent(MainActivity.this, MonumentsActivity.class);
+
+                // Start the new activity
+                startActivity(monumentsIntent);
+            }
+        });
+
     }
 }
