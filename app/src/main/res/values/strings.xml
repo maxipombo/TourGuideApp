@@ -5,4 +5,10 @@
     <string name="category_monuments">Monuments</string>
     <string name="category_famous_people">Famous People</string>
     <string name="category_rent_a_car">Rent a Car</string>
+
+    <string name="montevideo_description">Montevideo has consistently been rated as having the highest quality of life of any city in Latin America by 2015 has held this rank every year during the last decade.</string>
+    <string name="rivera_description">Rivera is the capital of Rivera Department of Uruguay. The border with Brazil joins it with the Brazilian city of Santana do Livramento, which is only a street away from it. Together, they form an urban area of around 200,000 inhabitants.</string>
+    <string name="colonia_description">It is renowned for its historic quarter, a UNESCO World Heritage Site. Modern Colonia del Sacramento produces textiles and has a free trade zone, in addition to a polytechnic centre and various government buildings.</string>
+    <string name="mercedes_description">Mercedes is an important centre of tourism, commerce and a commercial port. Its main industries are based on agriculture, dairy products, paper manufacturing and industrial activities. Its rambla (riverside promenade) is one of the widest in the country.</string>
+    <string name="salto_description">Salto is the capital city of the Salto Department in northwestern Uruguay. As of the 2011 census it had a population of 104,028 and is the second most populated city in Uruguay.It is served by the Nueva Hesperides International Airport.</string>
 </resources>
