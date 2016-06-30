@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">TourGuideApp</string>
+
+    <string name="category_cities">Cities</string>
+    <string name="category_monuments">Monuments</string>
+    <string name="category_famous_people">Famous People</string>
+    <string name="category_rent_a_car">Rent a Car</string>
+</resources>
